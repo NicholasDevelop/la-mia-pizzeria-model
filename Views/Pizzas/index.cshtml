@@ -33,6 +33,7 @@ using(PizzeriaContext db = new PizzeriaContext())
             <th>Descrizione</th>
             <th>Foto</th>
             <th>Prezzo</th>
+            <th>Visualizza</th>
         </tr>
     </thead>
     <tbody>
@@ -43,6 +44,7 @@ using(PizzeriaContext db = new PizzeriaContext())
                 <td class="description-table">@pizza.Description</td>
                 <td class="img-table"><img src="@pizza.Img"/></td>
                 <td class="price-table">@pizza.Price</td>
+                <td><a href="@Url.Action("Detail", "Pizzas", new {@pizza.Id})"><button>Visualizza Pizza</button></a></td>
             </tr>
         }
     </tbody>
