@@ -26,7 +26,7 @@ namespace la_mia_pizzeria_static.Controllers
                 }
                 else
                 {
-                    return View();
+                    return View(current);
                 }
             }
         }
