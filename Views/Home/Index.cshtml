@@ -8,7 +8,7 @@
 }
 
 @{
-    List<Pizza> pizzaList = new List<Pizza>();
+    List<la_mia_pizzeria_static.Models.Pizza> pizzaList = new List<la_mia_pizzeria_static.Models.Pizza>();
     pizzaList.Add(new("Margherita", "pomodoro, mozzarella", "https://rs-menus-api.roocdn.com/images/99f775f0-f4b5-41cb-a99c-332e265cbd83/image.jpeg?width=543&height=305&auto=webp&format=jpg&fit=crop", 3.50));
     pizzaList.Add(new("Quattro formaggi", "Fiordilatte di Agerola, Toma, Provolone del Monaco DOP, Gorgonzola DOP, Basilico, Olio EVO", "https://rs-menus-api.roocdn.com/images/8fea9476-3d41-48ba-a174-8a16b0a6a2f8/image.jpeg?width=543&height=305&auto=webp&format=jpg&fit=crop", 12.50));
     pizzaList.Add(new("Crudo di Norcia", "Pomodoro La Fiammante BIO, Fiordilatte di Agerola, Prosciutto Crudo di Norcia Renzini IGP, Gocce di parmigiano, Basilico, Olio EVO", "https://rs-menus-api.roocdn.com/images/05de12cd-7196-4278-a772-7df96f4cdf3b/image.jpeg?width=543&height=305&auto=webp&format=jpg&fit=crop", 12.50));
@@ -33,7 +33,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(Pizza pizza in pizzaList)
+        @foreach(la_mia_pizzeria_static.Models.Pizza pizza in pizzaList)
         {
             <tr class="list-table">
                 <td class="name-table">@pizza.Name</td>
